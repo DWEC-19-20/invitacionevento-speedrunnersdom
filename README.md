@@ -4,7 +4,7 @@ Aplicación de invitación boda.
 
 El objetivo es desarrollar una aplicación para controlar las invitaciones a una boda, que tendrá un aspecto final como el de la imagen
 
-![AppBoda](img/appBoda.jpg)
+![AppBoda](images/appBoda.png)
 
 Puedes moficiar el contexto a otro que quieras, un partido de futbol, una lan party para jugar partidas en red con amigos, etc. 
 pero la funcionad pedida será la misma y debes respetar los nombres de las clases css
