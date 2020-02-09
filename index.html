@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invitaciones Boda</title>
-  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>Invitación Boda</h1>
-      <p>Práctica de DOM de DWEC</p>
-      <form id="registrar">
-        <input type="text" name="name" placeholder="Invitar a alguien">
-        <button type="submit" name="submit" value="submit">Enviar</button>
-      </form>
-    </header>
-		
-    <div class="main">	
-      <h2>Invitados</h2>
-      <ul id="invitedList" class="">
-	      <li>
-		      <span>María</span>
-		      <label> Confirmed<input type="checkbox"> </label>
-		      <button>edit</button>
-		      <button>remove</button>
-	      </li>
-	      <li class="responded">
-		      <span>Pepe</span>
-		      <label>Confirmed<input type="checkbox"></label>
-		      <button>edit</button>
-		      <button>remove</button>
-	      </li>
-	    </ul>
-	    
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Invitaciones Boda</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/Confirm.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Invitación Boda</h1>
+
+        <form id="registrar">
+          <input
+            id="invite"
+            type="text"
+            name="invitadonuevo"
+            placeholder="Invitar a alguien"
+          />
+          <button id="send" type="submit" name="submit" value="submit">
+            Enviar
+          </button>
+        </form>
+      </header>
+
+      <div class="main">
+        <h2>Invitados</h2>
+        <div>
+          Ver solo asistentes<input type="checkbox" name="" id="assist" />
+        </div>
+        <ul id="invitedList" class="">
+          <li>
+            <span id="nombre">María</span>
+            <label>
+              Confirmed<input type="checkbox" class="check" id="gentechecked" />
+            </label>
+            <button class="mispan">edit</button>
+            <button class="remove">remove</button>
+          </li>
+          <li class="responded">
+            <span id="nombre">Pepe</span>
+            <label
+              >Confirmed<input type="checkbox" class="check" checked
+            /></label>
+            <button class="mispan">edit</button>
+            <button class="remove">remove</button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
